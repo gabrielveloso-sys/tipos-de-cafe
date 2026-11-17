@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tipos de Café: guia para conhecer cada preparo</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <h1>Tipos de Café</h1>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#cafes" aria-current="page">Cafés</a></li>
+        <li><a href="#comparativo">Comparativo</a></li>
+        <li><a href="#fale-conosco">Fale conosco</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <div class="principal">
+      <section id="cafes" aria-labelledby="t-cafes">
+        <h2 id="t-cafes">Cafés em destaque</h2>
+
+        <article>
+          <h3>Espresso</h3>
+          <figure>
+            <img src="imagens/cafe_espresso.jpg" alt="Xícara pequena de espresso com creme dourado sobre pires"
+              width="320" height="200">
+            <figcaption>Ilustração: espresso servido em xícara pequena</figcaption>
+          </figure>
+          <p>Preparado sob alta pressão em cerca de <strong>30 segundos</strong>, tem sabor <em>intenso</em> e uma
+            camada de creme por cima. É a base de quase todas as bebidas de cafeteria.</p>
+          <p>Atualizado em <time datetime="2026-11-17">17 de novembro de 2026</time>.</p>
+        </article>
+
+        <article>
+          <h3>Cappuccino</h3>
+          <figure>
+            <img src="imagens/capuccino.jpg" alt="Xícara de cappuccino com espuma de leite em formato de coração"
+              width="320" height="200">
+            <figcaption>Ilustração: cappuccino com espuma de leite</figcaption>
+          </figure>
+          <p>Mistura de partes iguais de espresso, leite vaporizado e espuma. É <strong>mais suave</strong> e cremoso
+            que o espresso e costuma ser servido no café da manhã.</p>
+          <p>Atualizado em <time datetime="2026-11-17">17 de novembro de 2026</time>.</p>
+        </article>
+
+        <article>
+          <h3>Café coado</h3>
+          <figure>
+            <img src="imagens/cafe_coado.jpg" alt="Coador de pano sobre uma jarra recebendo café quente" width="320"
+              height="200">
+            <figcaption>Ilustração: café coado no pano</figcaption>
+          </figure>
+          <p>O clássico das casas mineiras: água quente passa pelo pó em um filtro de papel ou de pano. O resultado é
+            uma bebida <em>leve</em>, perfeita para acompanhar um pão de queijo.</p>
+          <p>Atualizado em <time datetime="2026-11-17">17 de novembro de 2026</time>.</p>
+        </article>
+      </section>
+
+      <section id="comparativo" aria-labelledby="t-comparativo">
+        <h2 id="t-comparativo">Comparativo entre os cafés</h2>
+        <table>
+          <caption>Características dos principais tipos de café</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tipo</th>
+              <th scope="col">Preparo</th>
+              <th scope="col">Leite</th>
+              <th scope="col">Intensidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Espresso</th>
+              <td>Máquina, alta pressão</td>
+              <td>Não</td>
+              <td>Alta</td>
+            </tr>
+            <tr>
+              <th scope="row">Cappuccino</th>
+              <td>Espresso com leite e espuma</td>
+              <td>Sim</td>
+              <td>Média</td>
+            </tr>
+            <tr>
+              <th scope="row">Café coado</th>
+              <td>Filtro de papel ou pano</td>
+              <td>Não</td>
+              <td>Baixa</td>
+            </tr>
+            <tr>
+              <th scope="row">Latte</th>
+              <td>Espresso com bastante leite</td>
+              <td>Sim</td>
+              <td>Baixa</td>
+            </tr>
+            <tr>
+              <th scope="row">Café frio (cold brew)</th>
+              <td>Infusão em água fria por 12 horas</td>
+              <td>Não</td>
+              <td>Média</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="fale-conosco" aria-labelledby="t-form">
+        <h2 id="t-form">Fale conosco</h2>
+        <p>Quer sugerir um tipo de café para o guia? Envie sua mensagem.</p>
+        <form method="post">
+          <fieldset>
+            <legend>Seus dados</legend>
+
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+
+            <label for="favorito">Café favorito</label>
+            <select id="favorito" name="favorito">
+              <option value="espresso">Espresso</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="coado">Café coado</option>
+              <option value="latte">Latte</option>
+              <option value="cold-brew">Café frio</option>
+            </select>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+
+    <aside id="dicas" aria-label="Dicas para preparar café">
+      <h2>Dicas de barista</h2>
+      <ul>
+        <li>Use <strong>água filtrada</strong>: ela é 98% do café.</li>
+        <li>Moa os grãos <em>na hora</em> para preservar o aroma.</li>
+        <li>Não ferva a água: ela deve ficar entre 90 °C e 95 °C.</li>
+        <li>Guarde o pó em pote fechado, longe da luz e do calor.</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer id="contato">
+    <address>Contato: <a href="https://mail.google.com/mail/?view=cm&to=gabriel.veloso@estudante.iftm.edu.br&su=Contato%20pelo%20site%20Tipos%20de%20Caf%C3%A9" target="_blank" rel="noopener">gabriel.veloso@estudante.iftm.edu.br</a></address>
+    <p><small>&copy; 2026 · Projeto (IFTM)</small></p>
+  </footer>
+</body>
+
+</html>

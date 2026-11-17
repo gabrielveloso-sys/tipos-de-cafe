@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #2a1a10;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* vai servir para acessibildade*/
+.pular { 
+  position: absolute;
+  left: -9999px;
+}
+.pular:focus {
+  left: 0;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+
+header {
+  background: #5a3320;
+  color: #fff;
+  padding: 1rem;
+}
+header h1 {
+  margin: 0 0 0.5rem;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+header a {
+  color: #fff;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h2, h3 {
+  color: #5a3320;
+}
+
+article, aside {
+  border: 1px solid #b08a6a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #b08a6a;
+  padding: 0.4rem;
+  text-align: left;
+}
+thead th {
+  background: #5a3320;
+  color: #fff;
+}
+
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+}
+input, select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+button {
+  background: #5a3320;
+  color: #fff;
+  border: 0;
+  padding: 0.6rem 1.2rem;
+  margin-top: 0.75rem;
+  cursor: pointer;
+}
+
+
+footer {
+  background: #e8d9c0;
+  padding: 1rem;
+  text-align: center;
+}
+footer a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+
+@media (min-width: 701px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 1rem;
+  }
+}
